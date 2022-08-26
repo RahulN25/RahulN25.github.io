@@ -1,0 +1,208 @@
+:root {
+    --text-color: white;
+    --background-color: #050015 ;
+    --navbar-color: #ffffff;
+    --glow: #5af784;
+    --accent: #700089;
+    --highlight: #e12b38;
+    --white: #fff;
+    --backdrop: #212121;
+    --main: #700089;
+    --card-background: #17141d;
+  }
+ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Domine', serif;
+    font-size: 5em;
+    color: #212121;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    caret-color: rgba(0,0,0,0);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background-color: var(--background-color);
+    height: 300vh;
+    overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--backdrop);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+  }
+
+.logo {
+    width: 90%;
+    max-width: 100px;
+	height: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    font-family: 'Aquire', sans-serif;
+    /*position: sticky !important;*/
+    top: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    z-index: 1000;
+    
+}
+
+.nav-elements{
+    display: flex;
+}
+
+.nav-link{
+    color: white;
+    padding: 20px 0;
+    color: var(--text-color);
+    font-size: .9em;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover .nav-link{
+    color: white !important;
+}
+
+#nav-click{
+    display: none;
+}
+
+@media (min-width: 940px){
+    nav{
+        -webkit-box-shadow: 0 10px 5px #700089;
+        -moz-box-shadow: 0 10px 5px #700089;
+        box-shadow: 0 0px 15px #700089;
+    }
+    .nav-item {
+        margin: 20px;
+        padding: 3px;
+        float:left;
+        -webkit-transition: margin 0.3s ease-out;
+        -moz-transition: margin 0.3s ease-out;
+        -o-transition: margin 0.3s ease-out;
+    }
+      
+    .nav-item:hover {
+        cursor:pointer;
+        margin-top: 12px;
+        border-bottom: solid 1px #700089;  
+    } 
+
+    .menu-btn{
+        cursor: pointer ;
+        display: none;
+    }
+
+    .nav-close{
+        display: none;
+    }
+}
+
+
+@media(max-width: 940px) {
+    .nav-elements{
+        background-color: var(--navbar-color);
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        height: 43vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+      }
+
+    #nav-click:checked ~ ul{
+        left: 0%;
+    }
+    
+    #nav-click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+
+    .nav-item{
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-link{
+        padding: 10px 30%;
+        color: black !important;
+    }
+
+    .nav-item {
+        box-shadow: inset 0 0 0 0 #700089;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        margin: 20px 0px;
+        padding: 10px;
+    }
+      
+    .nav-item:hover {
+        box-shadow: inset 1000px 0 0 0 #700089;
+    }
+
+    .menu-btn{
+        font-size: 2em;
+        color: var(--text-color);
+    }
+
+    .menu-btn:hover{
+        color: white;
+    }
+
+    .nav-close{
+        color: #5f5f5f;
+        font-size: 2em;
+    }
+
+    .nav-close:hover{
+        color: white;
+    }
+}
+
+/*
+
+.nav-change{
+    background-color: white;
+}
+
+*/
