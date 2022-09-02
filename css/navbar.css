@@ -15,9 +15,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 
 @font-face {
-font-family: "Aquire";
-src: url("aquire_font/Aquire-BW0ox.otf");
+    font-family: AQ;
+    src: url("RahulN25.github.io/aquire_font/AquireLight-YzE0o.otf") format('truetype');
+    font-style: normal;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -151,7 +153,8 @@ nav{
         display: block;
         text-align: center;
         transition: all 0.5s ease;
-	border-radius: 5% !important;
+		border-radius: 5%;
+		font-family: 'AQ' !important;
       }
 
     #nav-click:checked ~ ul{
