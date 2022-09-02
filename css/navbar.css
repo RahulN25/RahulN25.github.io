@@ -154,7 +154,6 @@ nav{
         text-align: center;
         transition: all 0.5s ease;
 		border-radius: 5%;
-		font-family: 'AQ' !important;
       }
 
     #nav-click:checked ~ ul{
