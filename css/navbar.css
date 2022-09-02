@@ -154,7 +154,7 @@ nav{
         text-align: center;
         transition: all 0.5s ease;
 	border-radius: 5%;
-	font-size: 0.7em !important;
+	font-size: 0.8em !important;
       }
 
     #nav-click:checked ~ ul{
