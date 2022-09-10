@@ -70,8 +70,13 @@ h2{
 
 .my-intro{
   font-size: 1em;
-  padding: 10px 20%;
   letter-spacing: 2px;
+}
+
+@media screen and (min-width: 940px){
+  .my-intro{
+    padding: 10px 20%;
+  }
 }
 
 .my-intro i{
