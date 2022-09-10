@@ -419,7 +419,7 @@ tag{
 .card-header h2 {
   font-size: 20px;
   margin: .25rem 0 auto;
-  margin-top: -100px;
+  margin-top: -15px;
   text-decoration: none;
   color: inherit;
   border: 0;
@@ -532,8 +532,8 @@ tag{
 
 @media screen and (max-width: 940px) {
   .card{
-    height: 380px;
-    width: 400px;
+    height: 400px;
+    width: 450px;
     padding: 1.5rem 1.5rem 0rem 1.5rem;
   }
 
