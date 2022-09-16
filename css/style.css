@@ -669,6 +669,7 @@ hr{
 }
 
 .copyright{
+  position: relative;
   font-size: 1.1em;
   margin-top: 30px;
   height: 60px;
@@ -696,6 +697,20 @@ hr{
   font-size: 1.1em;
   font-weight: 900;
   color: var(--accent);
+}
+
+.bg{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.front{
+  z-index: 100 !important;
 }
 
 /* body { 
