@@ -154,6 +154,12 @@
     -webkit-animation-delay:0s; 
 }
 
+@media (max-width: 940px){
+    .arrows{
+       top: 33em;
+    }
+}
+
 .glow {
     font-size: 1.3em;
     display: flex;
