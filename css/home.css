@@ -111,10 +111,11 @@
 .arrows {
     width: 60px;
     height: 72px;
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-left: -30px;
-    bottom: 60px;
+    bottom: 120px;
+    z-index: 1000 !important;
 }
   
 .arrows path {
@@ -156,7 +157,7 @@
 
 @media (max-width: 940px){
     .arrows{
-       top: 33em;
+       bottom: 18.5em;
     }
 }
 
