@@ -318,6 +318,10 @@ h2{
   width: 30px;
 }
 
+.skillcard{
+  padding-right: 60px;
+}
+
 tag{
   font-size: 1rem;
   position: absolute; 
@@ -359,7 +363,7 @@ tag{
   }
 }
 
-.skillcard .skillslogo:hover{
+.skillcard:hover{
   margin-top: -10px;
   margin-bottom: 10px;
   transition: .3s;
