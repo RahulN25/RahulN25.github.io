@@ -1,0 +1,199 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+body a{
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* Styles for browser window */
+.browser {
+  width: 100%;
+  max-width: 90%;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.browser-controls {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 10px;
+}
+
+.browser-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.close {
+  background-color: #ff5f57;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+}
+
+.restore {
+  background-color: #28ca41;
+}
+
+.browser-content {
+  padding: 0 20px 20px;
+}
+
+/* Resume styling */
+.resume {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  margin-top: -5px !important;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 16.7px;
+  color: #265077;
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  margin-bottom: 10px;
+}
+
+/* .project {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+} */
+
+.project h3 {
+  font-size: 18px;
+  margin-top: 0;
+  color: #3498db;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.skills ul, .interests ul, .languages ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li, .interests li, .languages li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.contacts {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contacts p {
+  margin-bottom: 10px;
+}
+
+.contacts a {
+  color: #3498db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .browser {
+    max-width: 90%;
+  }
+}
+
+.profile-picture {
+  width: 170px;
+  height: 170px;
+  background-image: url('profile.jpg'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education h2{
+  margin-bottom: -35px !important;
+}
+
+.education-entry h3{
+  margin-top: 50px;
+}
+
+.education-entry h4{
+  font-weight: 500;
+  font-size: 16.8px;
+  margin-top: 10px;
+}
+
+.education-entry p{
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 14px;
+  margin-top: -38px;
+}
+
+.project {
+  margin-top: 10px;
+  margin-bottom: 70px!important;
+}
+.float-right {
+  text-align: right;
+  font-size: 14px;
+  margin-top: -45px;
+}
+
+.projects h4{
+  margin-top: 10px;
+  width: 80%;
+  font-size: 15px;
+  font-weight: 100;
+}
