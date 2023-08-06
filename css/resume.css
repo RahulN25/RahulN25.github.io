@@ -1,7 +1,4 @@
 /* Reset default browser styles */
-html{ 
-  background-color: #050015 !important;
-}
 
 body, h1, h2, h3, p, ul, li, a {
   margin: 0;
@@ -9,6 +6,7 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 body {
+  background-color: #050015;
   font-family: Arial, sans-serif;
 }
 
