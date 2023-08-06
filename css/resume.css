@@ -1,6 +1,6 @@
 /* Reset default browser styles */
 html{ 
-  background-color: #050015;
+  background-color: #050015 !important;
 }
 
 body, h1, h2, h3, p, ul, li, a {
