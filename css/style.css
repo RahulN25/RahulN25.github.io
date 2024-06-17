@@ -661,7 +661,7 @@ hr{
   }
 
   .contact{
-    margin-left: 300px;
+    margin-left: 50%;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -715,10 +715,10 @@ hr{
 }
 
 
-/* body { 
+body { 
   background: url(https://wallpapercave.com/wp/wp4415960.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
