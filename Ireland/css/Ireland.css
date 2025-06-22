@@ -1,0 +1,369 @@
+:root {
+  --bg: #050015;
+  --card-bg: #161b22;
+  --text: #e6edf3;
+  --highlight: #00b4d8;
+  --highlight-hover: #48cae4;
+  --muted: #c0c0c0;
+  --card-border: #30363d;
+  --section-border: rgba(0, 180, 216, 0.2);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 5%;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.logo-icon {
+  color: var(--highlight);
+  font-size: 1.5em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links a:hover {
+  color: var(--highlight);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--highlight);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--highlight) !important;
+}
+
+.active::after {
+  width: 100% !important;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+header h1 {
+  color: var(--highlight);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+header p {
+  color: var(--text);
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 50px 0 30px;
+  color: var(--highlight);
+  font-size: 2em;
+}
+
+.section-divider {
+  width: 70%;
+  margin: 20px auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,180,216,0), rgba(0,180,216,0.75), rgba(0,180,216,0));
+}
+
+/* Card Grid Styles */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 180, 216, 0.2);
+  border-color: var(--highlight);
+}
+
+.card h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: var(--highlight);
+  position: relative;
+}
+
+.card h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--highlight);
+  transition: width 0.3s ease;
+}
+
+.card:hover h2::after {
+  width: 100%;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+  padding: 20px 5% 60px;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quick-links-group h3 {
+  color: var(--highlight);
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.quick-links-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links-group li {
+  margin-bottom: 12px;
+}
+
+.quick-links-group a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quick-links-group a:hover {
+  color: var(--highlight);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 0px 0px 50px 0px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--highlight);
+  transform: translateY(-3px);
+}
+
+.contact-icon {
+  font-size: 1.5em;
+  color: var(--highlight);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--card-border);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: var(--highlight);
+}
+
+.footer-links i {
+  font-size: 1.1em;
+}
+
+.copyright {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--card-border);
+    transform: translateY(-150%);
+    transition: transform 0.4s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .section-heading {
+    font-size: 1.7em;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
